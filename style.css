@@ -1,0 +1,133 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+.elements{
+    display: flex;
+    align-items: flex-start;
+}
+.checkbox{
+    height: 50px;
+    width: 50px;
+}
+.checkbox:hover{
+    cursor: pointer;
+}
+#username{
+    height: 20px;
+    border: none;
+    font-size: x-large;
+    width: 250px;
+}
+h1{
+    width: 450px;
+}
+h2{
+    text-decoration: underline;
+}
+.task{
+    height: 50px;
+    width: 400px;
+    font-size: x-large;
+}
+#checklist{
+    border-color: rgb(205, 205, 205);
+    border-style: dashed;
+    padding: 10px;
+}
+#notepad{
+    height: 500px;
+    width: 500px;
+    font-size: x-large;
+}
+.link{
+    margin: 10px;
+    padding: 10px;
+}
+#save{
+    margin-top: 25px;
+    background-color: green;
+    height: 40px;
+    font-size: x-large;
+}
+#youtube{
+    color: white;
+    background-color: rgb(255, 0, 51);
+    border: none;
+    border-radius: 20px;
+}
+#youtube:hover{
+    background-color: rgb(255, 53, 53);
+}
+#foxhole{
+    border-radius: 0px;
+    background-color: grey;
+    border: 0;
+}
+#foxhole:hover{
+    background-color: rgba(128, 128, 128, 0.618);
+}
+#aternos{
+    background-color: rgb(43, 135, 211);
+    border: none;
+}
+#aternos:hover{
+    background-color: rgb(56, 160, 246);
+}
+
+#newBtn{
+    margin: 10px;
+}
+.custom{
+    padding: 10px;
+    margin: 10px;
+}
+#cancelNewBtn{
+    background-color: rgb(181, 0, 0);
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}
+#cancelNewBtn:hover{
+    background-color: red;
+}
+#confirmNewBtn{
+    background-color: green;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}
+#confirmNewBtn:hover{
+    background-color: rgb(0, 181, 0);
+}
+#customBtns{
+    height: 59px;
+}
+
+.count{
+    margin: 10px;
+    padding: 10px;
+    border-style: groove;
+    border-color: black;
+}
+#counterName{
+    border: none;
+    width: 100px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#version{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 60px;
+    width: fit-content;
+}
+#tips{
+    text-align: center;
+    font-style: italic;
+    margin-top: -35px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="elements">
+            <h1>Welcome, <input id="username" placeholder="write your username"></h1>
+            <button id="save">save everything</button>
+        </div>
+        <div class="elements">
+            <div id="checklist">
+                <h2>Checklist:</h2>
+                <ol>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task1Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task1Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task2Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task2Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task3Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task3Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task4Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task4Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task5Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task5Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task6Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task6Check" class="checkbox">
+                        </div>
+                        <!--baguette-->
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task7Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task7Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task8Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task8Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task9Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task9Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="elements">
+                            <input type="text" id="task10Input" class="task" placeholder="write task">
+                            <input type="checkbox" id="task10Check" class="checkbox">
+                        </div>
+                    </li>
+                    <br>
+                </ol>
+            </div>
+            <div>
+                <textarea placeholder="take notes here" id="notepad"></textarea>
+                <div>
+                    <h2>Useful links</h2>
+                    <div class="elements">
+                        <button id="wikipedia" class="link">Wikipedia</button>
+                        <button id="youtube" class="link">Youtube</button>
+                        <button id="foxhole" class="link">Foxhole Wiki</button>
+                        <button id="tosdr" class="link">Terms of Service didn't read</button>
+                    </div>
+                    <div class="elements">
+                        <button id="aternos" class="link">Aternos</button>
+                    </div>
+                    <div id="customBtns" class="elements"></div>
+                    <button id="newBtn">+ new button</button>
+                    <button id="deleteBtns">delete <i>ALL</i> custom buttons</button>
+                    <dialog id="newBtnUi">
+                        <h2>Create new button:</h2>
+                        <input id="btnName" placeholder="insert name"><br>
+                        <input id="btnLink" placeholder="insert url"><br>
+                        <button id="cancelNewBtn">Cancel</button>
+                        <button id="confirmNewBtn">Confirm</button>
+                    </dialog>
+                </div>
+                <div>
+                    <h2><input id="counterName" type="text" placeholder="item name">counter</h2>
+                    <div class="elements">
+                        <button id="-" class="count">-</button>
+                        <p id="counter" class="count">0</p>
+                        <button id="+" class="count">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="version">Version: in developement</p>
+        <p id="tips">Don't forget to save any changes!</p>
+        <script src="main.js"></script>
+    </body>
+</html>
