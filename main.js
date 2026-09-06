@@ -8,6 +8,10 @@ const usernameInput = get("username")
 let username = localStorage.getItem("username")
 usernameInput.value = username
 
+//MISC CODE
+const aboutBtn = get("aboutBtn");
+const settingsBtn = get("settingsBtn");
+
 //CHECKLIST CODE
 function chickIfChecked(input, checkbox, task){
     console.log(checkbox.checked)
@@ -193,7 +197,7 @@ notepad.value = notepadContent
 //LINKS CODE
 const wikipediaBtn = get("wikipedia");
 const youtubeBtn = get("youtube");
-const foxholeBtn = get("foxhole");
+const githubBtn = get("github");
 const tosdrBtn = get("tosdr");
 const aternosBtn = get("aternos");
 wikipediaBtn.onclick = function(){
@@ -202,8 +206,8 @@ wikipediaBtn.onclick = function(){
 youtubeBtn.onclick = function(){
     window.open("https://www.youtube.com/", "_blank")
 };
-foxholeBtn.onclick = function(){
-    window.open("https://foxhole.wiki.gg/", "_blank")
+githubBtn.onclick = function(){
+    window.open("https://github.com/", "_blank")
 };
 tosdrBtn.onclick = function(){
     window.open("https://tosdr.org/", "_blank")
