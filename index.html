@@ -4,13 +4,36 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="body">
         <div class="elements">
             <h1>Welcome, <input id="username" placeholder="write your username"></h1>
             <button id="save">save everything</button>
             <div id="misc">
                 <button id="aboutBtn" class="miscBtn">About</button>
+                <dialog id="aboutUi">
+                    <h2>About dashboard</h2>
+                    <p>
+                        Dashboard is a productivity project created in order for me to improve my coding skills<br>
+                        all while creating a functional application to increase productivity and to make some<br>
+                        tasks easier and more convenient to accomplish.
+                    </p>
+                    <p>
+                        The execution of this idea is far from "industry standard" and it's quite ugly,<br>
+                        but it works.<br>
+                        And <i>if it ain't broken, don't fix it.</i>
+                    </p>
+                    <a href="https://github.com/leECHO2811/dashboard" target="_blank">btw here's the link to the repo</a>:)<br>
+                    <button id="closeAbout" class="close">close</button>
+                </dialog>
                 <button id="settingsBtn" class="miscBtn">⚙️</button>
+                <dialog id="settingsUi">
+                    <h2>Settings</h2>
+                    <div class="elements">
+                        <input type="checkbox" id="darkmode">
+                        <p style="margin-top: 5px;">dark mode on/off</p>
+                    </div>
+                    <button id="closeSettings" class="close">close</button>
+                </dialog>
             </div>
         </div>
         <div class="elements">
@@ -110,7 +133,7 @@
                         <h2>Create new button:</h2>
                         <input id="btnName" placeholder="insert name"><br>
                         <input id="btnLink" placeholder="insert url"><br>
-                        <button id="cancelNewBtn">Cancel</button>
+                        <button id="cancelNewBtn" class="close">Cancel</button>
                         <button id="confirmNewBtn">Confirm</button>
                     </dialog>
                 </div>

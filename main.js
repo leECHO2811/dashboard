@@ -9,8 +9,42 @@ let username = localStorage.getItem("username")
 usernameInput.value = username
 
 //MISC CODE
+const body = get("body")
 const aboutBtn = get("aboutBtn");
+const aboutUi = get("aboutUi");
+const closeAbout = get("closeAbout");
 const settingsBtn = get("settingsBtn");
+const settingsUi = get("settingsUi");
+const darkmodeBtn = get("darkmode");
+const closeSettings = get("closeSettings");
+
+aboutBtn.onclick = function(){
+    aboutUi.showModal()
+};
+closeAbout.onclick = function(){
+    aboutUi.close()
+};
+
+settingsBtn.onclick = function(){
+    settingsUi.showModal()
+};
+darkmodeBtn.onclick = function(){
+    if(darkmodeBtn.checked){
+        body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+        body.style.color = "white"
+        notepad.style.backgroundColor = "rgba(0, 0, 0, 0.80)"
+        notepad.style.color = "white"
+    }
+    else{
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+        notepad.style.backgroundColor = "white"
+        notepad.style.color = "black"
+    }
+}
+closeSettings.onclick = function(){
+    settingsUi.close()
+};
 
 //CHECKLIST CODE
 function chickIfChecked(input, checkbox, task){
