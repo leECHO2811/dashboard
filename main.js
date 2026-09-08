@@ -28,18 +28,23 @@ closeAbout.onclick = function(){
 settingsBtn.onclick = function(){
     settingsUi.showModal()
 };
+//darkmode init at bottom due to code logic reasons
 darkmodeBtn.onclick = function(){
     if(darkmodeBtn.checked){
         body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
         body.style.color = "white"
+        usernameInput.style.color = "white"
         notepad.style.backgroundColor = "rgba(0, 0, 0, 0.80)"
         notepad.style.color = "white"
+        counterName.style.color = "white"
     }
     else{
         body.style.backgroundColor = "white"
         body.style.color = "black"
+        usernameInput.style.color = "black"
         notepad.style.backgroundColor = "white"
         notepad.style.color = "black"
+        counterName.style.color = "black"
     }
 }
 closeSettings.onclick = function(){
@@ -58,7 +63,7 @@ function chickIfChecked(input, checkbox, task){
         task.isChecked = false
     }
 };
-//saving a specific thing
+//saving a specific task
 function saveToObject(input, task){
     task.content = input.value
 };
@@ -66,6 +71,7 @@ function saveToObject(input, task){
 function updateLocalStorage(){
     username = usernameInput.value
     localStorage.setItem("username", username)
+    localStorage.setItem("darkMode", darkmodeBtn.checked)
     notepadContent = notepad.value
     localStorage.setItem("notepad", notepadContent)
     localStorage.setItem("counterName", counterName.value)
@@ -327,4 +333,16 @@ addBtn.onclick = function(){
 subtractBtn.onclick = function(){
     amount --
     counter.textContent = amount
+};
+
+//darkmode initializer
+if(localStorage.getItem("darkMode") == "true"){
+    console.log("darkmode on")
+    darkmodeBtn.checked = true
+    body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    body.style.color = "white"
+    usernameInput.style.color = "white"
+    notepad.style.backgroundColor = "rgba(0, 0, 0, 0.80)"
+    notepad.style.color = "white"
+    counterName.style.color = "white"
 };

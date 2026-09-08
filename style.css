@@ -24,6 +24,7 @@ button:hover{
     border: none;
     font-size: x-large;
     width: 250px;
+    background: none;
 }
 h1{
     width: 450px;
@@ -132,6 +133,7 @@ h2{
     width: 100px;
     font-size: large;
     font-weight: bold;
+    background: none;
 }
 
 #version{
