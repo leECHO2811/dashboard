@@ -9,7 +9,10 @@ let username = localStorage.getItem("username")
 usernameInput.value = username
 
 //MISC CODE
-const body = get("body")
+const body = get("body");
+const patchNotesBtn = get("patchNotesBtn");
+const patchNotesUi = get("patchNotesUi");
+const closePatchNotes = get("closePatchNotes");
 const aboutBtn = get("aboutBtn");
 const aboutUi = get("aboutUi");
 const closeAbout = get("closeAbout");
@@ -18,6 +21,12 @@ const settingsUi = get("settingsUi");
 const darkmodeBtn = get("darkmode");
 const closeSettings = get("closeSettings");
 
+patchNotesBtn.onclick = function(){
+    patchNotesUi.showModal()
+};
+closePatchNotes.onclick = function(){
+    patchNotesUi.close()
+}
 aboutBtn.onclick = function(){
     aboutUi.showModal()
 };
@@ -34,6 +43,8 @@ darkmodeBtn.onclick = function(){
         body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
         body.style.color = "white"
         usernameInput.style.color = "white"
+        patchNotesUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+        patchNotesUi.style.color = "white"
         aboutUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
         aboutUi.style.color = "white"
         settingsUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
@@ -46,6 +57,8 @@ darkmodeBtn.onclick = function(){
         body.style.backgroundColor = "white"
         body.style.color = "black"
         usernameInput.style.color = "black"
+        patchNotesUi.style.backgroundColor = "white"
+        patchNotesUi.style.color = "black"
         aboutUi.style.backgroundColor = "white"
         aboutUi.style.color = "black"
         settingsUi.style.backgroundColor = "white"
@@ -350,6 +363,8 @@ if(localStorage.getItem("darkMode") == "true"){
     body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
     body.style.color = "white"
     usernameInput.style.color = "white"
+    patchNotesUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    patchNotesUi.style.color = "white"
     aboutUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
     aboutUi.style.color = "white"
     settingsUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"

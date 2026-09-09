@@ -7,6 +7,7 @@ button:hover{
 .elements{
     display: flex;
     align-items: flex-start;
+    margin-right: 10px;
 }
 #darkmode{
     height: 20px;
@@ -41,6 +42,7 @@ h2{
     border-color: rgb(205, 205, 205);
     border-style: dashed;
     padding: 10px;
+    margin-right: 10px;
 }
 #notepad{
     height: 500px;
@@ -54,7 +56,7 @@ h2{
 #save{
     margin-top: 25px;
     background-color: green;
-    height: 40px;
+    height: auto;
     font-size: x-large;
 }
 #save:hover{
@@ -62,7 +64,7 @@ h2{
 }
 #misc{
     align-items: right;
-    margin-left: 1150px;
+    margin-left: 1060px;
 }
 .miscBtn{
     height: auto;

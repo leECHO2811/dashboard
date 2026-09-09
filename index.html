@@ -9,6 +9,16 @@
             <h1>Welcome, <input id="username" placeholder="write your username"></h1>
             <button id="save">save everything</button>
             <div id="misc">
+                <button id="patchNotesBtn" class="miscBtn">patch notes</button>
+                <dialog id="patchNotesUi">
+                    <h2>Patch Notes</h2>
+                    <h3><i>Version: inDev 1.1</i></h3>
+                    <ul>
+                        <li>Added patch notes</li>
+                        <li>Fixed some UI problems</li>
+                    </ul>
+                    <button id="closePatchNotes" class="close">close</button>
+                </dialog>
                 <button id="aboutBtn" class="miscBtn">About</button>
                 <dialog id="aboutUi">
                     <h2>About dashboard</h2>
@@ -149,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <p id="version">Version: inDev 1.0</p>
+        <p id="version">Version: inDev 1.1</p>
         <p id="tips">Don't forget to save any changes!</p>
         <script src="main.js"></script>
     </body>
