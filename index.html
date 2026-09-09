@@ -6,90 +6,86 @@
     </head>
     <body id="body">
         <div class="elements">
-            <h1>Welcome, <input id="username" placeholder="write your username"></h1>
-            <button id="save">save everything</button>
+            <h1>Bienvenue, <input id="username" placeholder="écrivez votre nom"></h1>
+            <button id="save">tout sauvegarder</button>
             <div id="misc">
                 <button id="patchNotesBtn" class="miscBtn">patch notes</button>
                 <dialog id="patchNotesUi">
                     <h2>Patch Notes</h2>
-                    <h3><i>Version: inDev 1.1</i></h3>
+                    <h3><i>Version: Ly 1.0</i></h3>
                     <ul>
-                        <li>Added patch notes</li>
-                        <li>Fixed some UI problems</li>
+                        <li>création de la version Ly(lycée)</li>
                     </ul>
-                    <button id="closePatchNotes" class="close">close</button>
+                    <button id="closePatchNotes" class="close">fermer</button>
                 </dialog>
-                <button id="aboutBtn" class="miscBtn">About</button>
+                <button id="aboutBtn" class="miscBtn">À propos</button>
                 <dialog id="aboutUi">
-                    <h2>About dashboard</h2>
+                    <h2>À propos de Dashboard</h2>
                     <p>
-                        Dashboard is a productivity project created in order for me to improve my coding skills<br>
-                        all while creating a functional application to increase productivity and to make some<br>
-                        tasks easier and more convenient to accomplish.
+                        Dashboard est un projet de productivité crée dans le but de m'améliorer en programmation<br>
+                        tout en créant une application fonctionelle pour améliorer la productivité et pour rendre<br>
+                        certaines tâches plus faciles à accomplir.
                     </p>
                     <p>
-                        The execution of this idea is far from "industry standard" and it's quite ugly,<br>
-                        but it works.<br>
-                        And <i>if it ain't broken, don't fix it.</i>
-                    </p>
-                    <a href="https://github.com/leECHO2811/dashboard" target="_blank">btw here's the link to the repo</a>:)<br>
-                    <button id="closeAbout" class="close">close</button>
+                        L'éxécution de cette idée est loin de la perfection, mais ça marche.</p>
+                    <a href="https://github.com/leECHO2811/dashboard" target="_blank">voici le lien du repo</a>:)<br>
+                    <button id="closeAbout" class="close">fermer</button>
                 </dialog>
                 <button id="settingsBtn" class="miscBtn">⚙️</button>
                 <dialog id="settingsUi">
-                    <h2>Settings</h2>
+                    <h2>Paramètres</h2>
                     <div class="elements">
                         <input type="checkbox" id="darkmode">
-                        <p style="margin-top: 5px;">dark mode on/off</p>
+                        <p style="margin-top: 5px;">mode sombre</p>
                     </div>
                     <!--REMOVE ONCE UI DISTORSION IS PATCHED-->
-                    <p><i><u>NOTE: As of the current version,<br>a display scaling over 100% WILL cause UI distorsions</u></i></p>
-                    <button id="closeSettings" class="close">close</button>
+                    <p><i><u>NOTE: actuellement, un zoom supérieur à 100% dérèglera certaines interfaces.</u></i></p>
+                    <button id="closeSettings" class="close">fermer</button>
                 </dialog>
             </div>
         </div>
         <div class="elements">
             <div id="checklist">
-                <h2>Checklist:</h2>
+                <h2>Tâches:</h2>
                 <ol>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task1Input" class="task" placeholder="write task">
+                            <input type="text" id="task1Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task1Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task2Input" class="task" placeholder="write task">
+                            <input type="text" id="task2Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task2Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task3Input" class="task" placeholder="write task">
+                            <input type="text" id="task3Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task3Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task4Input" class="task" placeholder="write task">
+                            <input type="text" id="task4Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task4Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task5Input" class="task" placeholder="write task">
+                            <input type="text" id="task5Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task5Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task6Input" class="task" placeholder="write task">
+                            <input type="text" id="task6Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task6Check" class="checkbox">
                         </div>
                         <!--baguette-->
@@ -97,28 +93,28 @@
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task7Input" class="task" placeholder="write task">
+                            <input type="text" id="task7Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task7Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task8Input" class="task" placeholder="write task">
+                            <input type="text" id="task8Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task8Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task9Input" class="task" placeholder="write task">
+                            <input type="text" id="task9Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task9Check" class="checkbox">
                         </div>
                     </li>
                     <br>
                     <li>
                         <div class="elements">
-                            <input type="text" id="task10Input" class="task" placeholder="write task">
+                            <input type="text" id="task10Input" class="task" placeholder="ajouter une tâche">
                             <input type="checkbox" id="task10Check" class="checkbox">
                         </div>
                     </li>
@@ -128,29 +124,26 @@
             <div>
                 <textarea placeholder="take notes here" id="notepad"></textarea>
                 <div>
-                    <h2>Useful links</h2>
+                    <h2>Liens utiles</h2>
                     <div class="elements">
                         <button id="wikipedia" class="link">Wikipedia</button>
+                        <button id="mbn" class="link">MBN</button>
                         <button id="youtube" class="link">Youtube</button>
-                        <button id="github" class="link">Github</button>
                         <button id="tosdr" class="link">Terms of Service didn't read</button>
                     </div>
-                    <div class="elements">
-                        <button id="aternos" class="link">Aternos</button>
-                    </div>
                     <div id="customBtns" class="elements"></div>
-                    <button id="newBtn">+ new button</button>
-                    <button id="deleteBtns">delete <i>ALL</i> custom buttons</button>
+                    <button id="newBtn">+ nouveau bouton</button>
+                    <button id="deleteBtns">supprimer <i>TOUS</i> les boutons personnels</button>
                     <dialog id="newBtnUi">
-                        <h2>Create new button:</h2>
-                        <input id="btnName" placeholder="insert name"><br>
-                        <input id="btnLink" placeholder="insert url"><br>
-                        <button id="cancelNewBtn" class="close">Cancel</button>
-                        <button id="confirmNewBtn">Confirm</button>
+                        <h2>Créer un nouveau bouton:</h2>
+                        <input id="btnName" placeholder="nom"><br>
+                        <input id="btnLink" placeholder="url (lien)"><br>
+                        <button id="cancelNewBtn" class="close">Annuler</button>
+                        <button id="confirmNewBtn">Confirmer</button>
                     </dialog>
                 </div>
                 <div>
-                    <h2><input id="counterName" type="text" placeholder="item name">counter</h2>
+                    <h2>compteur de <input id="counterName" type="text" placeholder="quelque chose"></h2>
                     <div class="elements">
                         <button id="-" class="count">-</button>
                         <p id="counter" class="count">0</p>
@@ -159,8 +152,8 @@
                 </div>
             </div>
         </div>
-        <p id="version">Version: inDev 1.1</p>
-        <p id="tips">Don't forget to save any changes!</p>
+        <p id="version">Version: Ly 1.0</p>
+        <p id="tips">N'oubliez pas de sauvegarder tous les changements!</p>
         <script src="main.js"></script>
     </body>
 </html>

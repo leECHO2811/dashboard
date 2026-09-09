@@ -163,8 +163,8 @@ const task10Check = get("task10Check");
 
 saveBtn.onclick = function(){
     updateLocalStorage()
-    window.alert("Data saved!")
-}
+    window.alert("Données sauvegardées!")
+};
 //checkbox events
 task1Check.addEventListener("change", ()=>{
     chickIfChecked(task1Input, task1Check, tasks.task1)
@@ -257,25 +257,22 @@ notepad.value = notepadContent
 
 //LINKS CODE
 const wikipediaBtn = get("wikipedia");
+const mbnbtn = get("mbn");
 const youtubeBtn = get("youtube");
-const githubBtn = get("github");
 const tosdrBtn = get("tosdr");
 const aternosBtn = get("aternos");
 wikipediaBtn.onclick = function(){
     window.open("https://www.wikipedia.org/", "_blank")
 };
+mbnbtn.onclick = function(){
+    window.open("https://www.monbureaunumerique.fr/", "_blank")
+};
 youtubeBtn.onclick = function(){
     window.open("https://www.youtube.com/", "_blank")
-};
-githubBtn.onclick = function(){
-    window.open("https://github.com/", "_blank")
 };
 tosdrBtn.onclick = function(){
     window.open("https://tosdr.org/", "_blank")
 };
-aternosBtn.onclick = function(){
-    window.open("https://aternos.org/", "_blank")
-}
 
 //BUTTON CREATOR CODE
 let customBtnsList = ""

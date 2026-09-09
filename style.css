@@ -24,7 +24,7 @@ button:hover{
     height: 20px;
     border: none;
     font-size: x-large;
-    width: 250px;
+    width: 200px;
     background: none;
 }
 h1{
@@ -64,7 +64,7 @@ h2{
 }
 #misc{
     align-items: right;
-    margin-left: 1060px;
+    margin-left: 1000px;
 }
 .miscBtn{
     height: auto;
