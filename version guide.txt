@@ -1,0 +1,4 @@
+inDev: in developement
+Ly: lycée
+dev: my personal version
+no annotation: regular public version

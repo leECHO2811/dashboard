@@ -48,6 +48,7 @@ h2{
     height: 500px;
     width: 500px;
     font-size: x-large;
+    margin-right: 10px;
 }
 .link{
     margin: 10px;
@@ -136,6 +137,13 @@ h2{
     font-size: large;
     font-weight: bold;
     background: none;
+}
+#right{
+    border-style: solid;
+    padding: 10px;
+}
+#image{
+    width: 800px;
 }
 
 #version{

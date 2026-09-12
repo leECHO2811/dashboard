@@ -356,6 +356,18 @@ subtractBtn.onclick = function(){
     counter.textContent = amount
 };
 
+//TIPS CODE
+const tipsUi = get("tips");
+let tips = [
+    "Don't forget to save any changes!",
+    "Custom buttons are links toward any website you want!",
+    "Dark mode is available in the settings!",
+    "Refresh the page to show a new tip!",
+    "Deleting browser cache may delete all saved data",
+    "This is NOT a tip (tip: THIS is a tip)"
+]
+tipsUi.textContent = tips[Math.floor(Math.random() * tips.length)]
+
 //darkmode initializer
 if(localStorage.getItem("darkMode") == "true"){
     console.log("darkmode on")
