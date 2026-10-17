@@ -372,16 +372,16 @@ tipsUi.textContent = tips[Math.floor(Math.random() * tips.length)]
 if(localStorage.getItem("darkMode") == "true"){
     console.log("darkmode on")
     darkmodeBtn.checked = true
-    body.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    body.style.backgroundColor = "rgba(1, 0, 24, 0.95)"
     body.style.color = "white"
     usernameInput.style.color = "white"
-    patchNotesUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    patchNotesUi.style.backgroundColor = "rgba(1, 0, 24, 0.95)"
     patchNotesUi.style.color = "white"
-    aboutUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    aboutUi.style.backgroundColor = "rgba(1, 0, 24, 0.95)"
     aboutUi.style.color = "white"
-    settingsUi.style.backgroundColor = "rgba(0, 0, 0, 0.90)"
+    settingsUi.style.backgroundColor = "rgba(1, 0, 24, 0.95)"
     settingsUi.style.color = "white"
-    notepad.style.backgroundColor = "rgba(0, 0, 0, 0.80)"
+    notepad.style.backgroundColor = "rgba(1, 0, 24, 0.95)"
     notepad.style.color = "white"
     counterName.style.color = "white"
 };

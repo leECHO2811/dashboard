@@ -37,11 +37,15 @@ h2{
     height: 50px;
     width: 400px;
     font-size: x-large;
+    border-radius: 25px;
+    border: 3px;
+    border-style: solid;
+    border-color: gray;
 }
 #checklist{
     border-color: rgb(205, 205, 205);
     border-style: dashed;
-    padding: 10px;
+    padding: 9px;
     margin-right: 10px;
 }
 #notepad{
@@ -55,7 +59,9 @@ h2{
     padding: 10px;
 }
 #save{
-    margin-top: 25px;
+    border: none;
+    padding: 3px;
+    border-radius: 10px;
     background-color: green;
     height: auto;
     font-size: x-large;
@@ -68,6 +74,11 @@ h2{
     margin-left: 1060px;
 }
 .miscBtn{
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: rgba(255, 255, 255, 0.800);
     height: auto;
 }
 #youtube{
@@ -82,7 +93,7 @@ h2{
 #github{
     border-radius: 10px;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.888);
     border: 0;
 }
 #foxhole:hover{
@@ -149,13 +160,17 @@ h2{
 #version{
     text-align: left;
     text-decoration: underline;
-    margin-top: 60px;
     width: fit-content;
+    margin-bottom: -19px;
 }
 #tips{
+    align-self: center;
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    margin-top: -35px;
+    margin-top: auto;
     margin-bottom: 0px;
+}
+#bottom{
+    align-items: bottom;
 }

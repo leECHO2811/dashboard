@@ -6,16 +6,20 @@
     </head>
     <body id="body">
         <div class="elements">
-            <h1>Welcome, <input id="username" placeholder="write your username"></h1>
+            <h1 style="margin-top: 0px;">Welcome, <input id="username" placeholder="write your username"></h1>
             <button id="save">save everything</button>
             <div id="misc">
                 <button id="patchNotesBtn" class="miscBtn">patch notes</button>
                 <dialog id="patchNotesUi">
                     <h2>Patch Notes</h2>
-                    <h3><i>Version: inDev 1.2</i></h3>
+                    <!--DON'T FORGET TO UPDATE THE VERSION INDICATOR AT THE BOTTOM-->
+                    <h3><i>Version: inDev 1.3</i></h3>
                     <ul>
-                        <li>Added more tips</li>
-                        <li>Added drawing</li>
+                        <li>changed the base resolution</li>
+                        <li>made checklist a bit "rounder"</li>
+                        <li>adjusted dark mode</li>
+                        <li>changed the decorative image</li>
+                        <li>slightly changed the patchnotes, about and settings buttons</li>
                     </ul>
                     <button id="closePatchNotes" class="close">close</button>
                 </dialog>
@@ -42,7 +46,7 @@
                         <p style="margin-top: 5px;">dark mode on/off</p>
                     </div>
                     <!--REMOVE ONCE UI DISTORSION IS PATCHED-->
-                    <p><i><u>NOTE: As of the current version,<br>a display scaling over 100% WILL cause UI distorsions</u></i></p>
+                    <p><i><u>NOTE: As of the current version,<br>a display scaling over 100% might cause UI distorsions</u></i></p>
                     <button id="closeSettings" class="close">close</button>
                 </dialog>
             </div>
@@ -148,6 +152,10 @@
                         <button id="confirmNewBtn">Confirm</button>
                     </dialog>
                 </div>
+            </div>
+            <div id="right">
+                <img src="doodles vol.1.png" id="image">
+                <p>drawing made by me :3 (I added it to fill in the right side)</p>
                 <div>
                     <h2><input id="counterName" type="text" placeholder="item name">counter</h2>
                     <div class="elements">
@@ -157,13 +165,11 @@
                     </div>
                 </div>
             </div>
-            <div id="right">
-                <img src="IMG_3495.jpeg" id="image">
-                <p>drawing made by me :3 (I added it to fill in the right side)</p>
-            </div>
         </div>
-        <p id="version">Version: inDev 1.2</p>
-        <p id="tips">Don't forget to save any changes!</p>
+        <div id="bottom">
+            <p id="version">Version: inDev 1.3</p>
+            <p id="tips">Don't forget to save any changes!</p>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
